@@ -1,8 +1,17 @@
 # Shimada-Bots-Website
 
-This is the website for the Shimada Bots company.\
+This is the website devlopment for the Shimada Bots company.
 View wiki for details on development roadmap and documentation.
-
+Includes
+- Projects
+- Help/Contact
+- Gallery
+- Sponsorship
+- Wiki
+- Community Service
+- About Us
+    - Mission Statement
+    - Members (with introductions)
 ## Running Locally
 1. Clone the repo
 2. Open the terminal
