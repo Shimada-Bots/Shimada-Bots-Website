@@ -1,83 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
 <head>
-  <!-- Page setup -->
-  <meta charset="utf-8">
-  <title>Your title here</title>
-  <meta name="description" content="A brief description of your site for search engines">
-  <meta name="author" content="Information about the author here">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <link rel="icon" type="image/png" href="favicon.png">
-
-  <!-- Stylesheets -->
-  <!-- Reset default styles and add support for google fonts -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
-    type="text/css" />
-  <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-
-  <!-- Custom styles -->
-  <link href="style.css" rel="stylesheet" type="text/css" />
-
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-  <!-- Want to add Bootstrap? -->
-  <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-
+  <title>Shimada Bots</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
 </head>
-
 <body>
-
-  <header id="header">
-    <img src="logo.jpg">
-    <h1>Shimada Bots</h1>
-
-    <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
-    <ul class="main-menu">
-      <li><a href="#home">home</a></li>
-      <li><a href="#about">about</a></li>
-      <li><a href="#contact">contact</a></li>
-    </ul>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="Shimada Bots Logo">
+      </div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#teams">Teams</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <div id="container">
-    <div class="inner">
-      <div id="content">
+  <section id="banner">
+    <div class="banner-content">
+      <h1>Welcome to Shimada Bots</h1>
+      <p>Join us to explore the exciting world of robotics!</p>
+      <a href="#contact" class="cta-button">Get Involved</a>
+    </div>
+  </section>
 
-        <div id="home" class="content-region hide">
-          <h2>Home</h2>
-          <p>
-            This is the Shimada Bots website. It is currently a work in progress
-          </p>
-        </div>
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Shimada Bots is a student organization dedicated to promoting robotics and providing hands-on learning experiences. We participate in various competitions and host workshops to enhance skills and knowledge in the field of robotics.</p>
+    </div>
+  </section>
 
-        <div id="about" class="content-region hide">
-          <h2>About</h2>
-          <p>
-            This is our about section. Will be updated shortly.
-          </p>
-        </div>
-
-        <div id="contact" class="content-region hide">
-          <h2>Contact</h2>
-          <p>
-            shimadabots@gmail.com
-          </p>
-        </div>
-
+  <section id="teams">
+    <div class="container">
+      <h2>Our Teams</h2>
+      <div class="team-card">
+        <img src="team1.jpg" alt="Team 1">
+        <h3>Team 1</h3>
+        <p>Team 1 description goes here.</p>
+      </div>
+      <div class="team-card">
+        <img src="team2.jpg" alt="Team 2">
+        <h3>Team 2</h3>
+        <p>Team 2 description goes here.</p>
       </div>
     </div>
-  </div>
+  </section>
+
+  <section id="events">
+    <div class="container">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>Workshop: Introduction to Robotics - October 20, 2023</li>
+        <li>VEX Robotics Competition - November 5, 2023</li>
+        <li>Guest Speaker: Robotics in Industry - November 15, 2023</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br>
+        <input type="submit" value="Send Message">
+      </form>
+    </div>
+  </section>
 
   <footer>
-
+    <div class="container">
+      <p>Shimada Bots Est. 2022</p>
+    </div>
   </footer>
-
-  <!-- Load additional JS scripts here -->
-  <script type="text/javascript" src="script.js"></script>
-
 </body>
-
 </html>
