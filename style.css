@@ -17,6 +17,11 @@ nav {
   justify-content: space-between;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
 .logo img {
   height: 50px;
 }
@@ -38,12 +43,17 @@ nav ul li a {
 }
 
 section#banner {
-  background-image: url('banner.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  width: 100%;
-  padding: 50px 100px 50px 100px;
+  background-image: url('assets/logos/simada2.png');
+  background-position: 80% 50%;
+  background-size: 700px 500px;
+  background-repeat: no-repeat;
+}
+
+.banner-layout {
+  background-color: rgba(200, 200, 200, 0.5);
+  height: 80%;
+
+  padding: 8% 10% 8% 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +61,7 @@ section#banner {
 
 .banner-content {
   text-align: center;
-  width: 100%;
+  margin-right: 50%;
 }
 
 h1 {
@@ -74,15 +84,15 @@ p {
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px;
+  width: 100%;
+  display: block;
 }
 
 .info-container {
-  margin-left: 200px;
-  margin-right: 200px;
-  padding: 40px;
+  margin: 2% 10% 8% 10%;
+  display: flex;
+  justify-content: center;
+  width: 80%;
 }
 
 section h2 {
