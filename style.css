@@ -50,7 +50,9 @@ section#banner {
 }
 
 .banner-layout {
+  
   background-color: rgba(200, 200, 200, 0.5);
+
   height: 80%;
 
   padding: 8% 10% 8% 10%;
@@ -89,7 +91,7 @@ p {
 }
 
 .info-container {
-  margin: 2% 10% 8% 10%;
+  margin: 2% 10% 40px 10%;
   display: flex;
   justify-content: center;
   width: 80%;
@@ -100,9 +102,20 @@ section h2 {
   margin-bottom: 20px;
 }
 
+/* Teams */
+
+.teams-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20%;
+  flex-wrap: wrap;
+}
+
 .team-card {
   text-align: center;
   margin-bottom: 20px;
+  min-width: 200px
 }
 
 .team-card img {
@@ -118,4 +131,22 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
+}
+
+/* Events */
+
+.events-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10%;
+}
+
+.event-card {
+  border-radius: 10px;
+  height: 400px;
+  min-width: 350px;
+  
+  background-color: #ffffff;
+  box-shadow: 3px 3px 5px 5px #666666;
 }

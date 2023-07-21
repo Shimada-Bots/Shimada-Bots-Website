@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header>
+  <header style="padding: 5px">
     <nav>
       <div class="logo">
         <img src="assets/logos/ShimadaLogo4k.png" alt="Shimada Bots Logo">
@@ -35,28 +35,31 @@
   </section>
 
   <section id="about">
-    <div class="info-container">
-      <div class="container">
+    <div class="info-container" style="display: flex;">
+      <div class="container" style="margin: 0% 5% 0% 0%">
         <h2 style="color: #000000">About Us</h2>
         <p style="color: #000000">Shimada Bots is a student organization dedicated to promoting robotics and providing
           hands-on learning
           experiences. We participate in various competitions and host workshops to enhance skills and knowledge in the
           field of robotics.</p>
       </div>
+      <div class="container" style="margin: 0% 0% 0% 5%">
+        <img src="assets/logos/placeholder.png" style="width: 80%">
+      </div>
     </div>
   </section>
 
   <section id="teams">
-    <div class="info-container">
-      <div class="container">
-        <h2>Our Teams</h2>
+    <div class="info-container" style="flex-direction: column">
+      <h2>Meet the Teams</h2>
+      <div class="teams-container">
         <div class="team-card">
-          <img src="team1.jpg" alt="Team 1">
+          <img src="assets/logos/placeholder.png" alt="Team 1">
           <h3>Team 1</h3>
           <p style="color: #000000">Team 1 description goes here.</p>
         </div>
         <div class="team-card">
-          <img src="team2.jpg" alt="Team 2">
+          <img src="assets/logos/placeholder.png" alt="Team 2">
           <h3>Team 2</h3>
           <p style="color: #000000">Team 2 description goes here.</p>
         </div>
@@ -68,11 +71,15 @@
     <div class="info-container">
       <div class="container">
         <h2>Upcoming Events</h2>
-        <ul>
-          <li>Workshop: Introduction to Robotics - October 20, 2023</li>
-          <li>VEX Robotics Competition - November 5, 2023</li>
-          <li>Guest Speaker: Robotics in Industry - November 15, 2023</li>
-        </ul>
+        <div class="events-container">
+          <ul>
+            <li>Workshop: Introduction to Robotics - October 20, 2023</li>
+            <li>VEX Robotics Competition - November 5, 2023</li>
+            <li>Guest Speaker: Robotics in Industry - November 15, 2023</li>
+          </ul>
+          <div class="event-card">
+          </div>
+        </div>
       </div>
     </div>
   </section>
