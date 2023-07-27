@@ -1,16 +1,15 @@
 import JSON from "./events.json" assert {type: "json"}
 
-const eventsContainer = document.getElementsByClassName("events-container")
-
+const eventsContainer = document.getElementById("events-container")
+eventsContainer.innerHtml = ""
 JSON.events.forEach(event => {
-    console.log(event)
-    eventsContainer.innerHtml += '<div class=\"card event-card\">\n' +
-        '<div class=\"event-image-box\">\n' +
-        '</div>\n' +
-        '    <div class=\"event-desc-box\">\n' +
-        '        <h1 style=\"color: #333333; font-weight: bold\">' + event.name +  '</h1>\n' +
-        '        <h1 style=\"color: #333333; font-weight: bold\">' + event.date +  '</h1>\n' +
-        '        <p style=\"color: #333333;\">' + event.description + '<us></us></p>\n' +
-        '    </div>\n' +
-        '</div>'
+    eventsContainer.innerHTML += "<div class=\"card event-card\">" +
+        "    <div class=\"event-image-box\">" +
+        "    </div>" +
+        "    <div class=\"event-desc-box\">" +
+        "        <h1 style=\"color: #333333; font-weight: bold\">" + event.name +  "</h1>" +
+        "        <h1 style=\"color: #333333; font-weight: bold\">" + event.date +  "</h1>" +
+        "        <p style=\"color: #333333;\">" + event.description + "</p>" +
+        "    </div>" +
+        "</div>"
 })
