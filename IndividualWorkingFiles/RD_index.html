@@ -6,16 +6,29 @@
   <link rel="stylesheet" type="text/css" href="../style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="../script.js"></script>
-  <script type="module" src="BS_events.js"></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
+    <svg class="pl" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="pl-grad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="hsl(193,90%,55%)" />
+                <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+            </linearGradient>
+        </defs>
+        <circle class="pl__ring" r="56" cx="64" cy="64" fill="none" stroke="hsla(0,10%,10%,0.1)" stroke-width="16" stroke-linecap="round" />
+        <path class="pl__worm" d="M92,15.492S78.194,4.967,66.743,16.887c-17.231,17.938-28.26,96.974-28.26,96.974L119.85,59.892l-99-31.588,57.528,89.832L97.8,19.349,13.636,88.51l89.012,16.015S81.908,38.332,66.1,22.337C50.114,6.156,36,15.492,36,15.492a56,56,0,1,0,56,0Z" fill="none" stroke="url(#pl-grad)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="44 1111" stroke-dashoffset="10" />
+    </svg>
   <header style="padding: 5px">
     <nav>
       <div class="logo">
-        <img src="../assets/logos/ShimadaLogo4k.png" alt="Shimada Bots Logo">
-        <h2>SHIMADA BOTS</h2>
+        <a href="../index.html">
+        <span>
+            <img src="../assets/logos/ShimadaLogo4k.png" alt="Shimada Bots Logo">
+            <h2>SHIMADA BOTS</h2> 
+        </span>     
+    </a>   
       </div>
       <ul>
         <li><a href="#about">About</a></li>
@@ -46,9 +59,9 @@
           field of robotics.</p>
       </div>
       <div class="container" style="display: flex; justify-content: center;">
-        <img src="../assets/logos/placeholder.png" style="width: 5%">
-        <img src="../assets/logos/Overlay_Transparent.png">
-        <img src="../assets/logos/placeholder.png" style="width: 5%">
+        <img src="assets/logos/placeholder.png" style="width: 5%">
+        <img src="assets/logos/Overlay_Transparent.png">
+        <img src="assets/logos/placeholder.png" style="width: 5%">
       </div>
     </div>
   </section>
@@ -58,12 +71,12 @@
       <h2>Meet the Teams</h2>
       <div class="teams-container">
         <div class="team-card">
-          <img src="../assets/logos/placeholder.png" alt="Team 1">
+          <img src="assets/logos/placeholder.png" alt="Team 1">
           <h3>Team 1</h3>
           <p style="color: #000000">Team 1 description goes here.</p>
         </div>
         <div class="team-card">
-          <img src="../assets/logos/placeholder.png" alt="Team 2">
+          <img src="assets/logos/placeholder.png" alt="Team 2">
           <h3>Team 2</h3>
           <p style="color: #000000">Team 2 description goes here.</p>
         </div>
@@ -76,7 +89,19 @@
       <div class="container">
         <h2>Upcoming Events</h2>
         <div class="events-container">
-
+          <ul>
+            <li>Workshop: Introduction to Robotics - October 20, 2023</li>
+            <li>VEX Robotics Competition - November 5, 2023</li>
+            <li>Guest Speaker: Robotics in Industry - November 15, 2023</li>
+          </ul>
+          <div class="card event-card">
+            <div class="event-image-box">
+            </div>
+            <div class="event-desc-box">
+              <h1 style="color: #333333;">Among Us</h1>
+              <p style="color: #333333;">We play among <us></us></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,9 @@
+{
+  "events": [
+    {
+      "name": "Example Event",
+      "date": "10/20/2023",
+      "description": "Woooh robotics yeah!"
+    }
+  ]
+}
