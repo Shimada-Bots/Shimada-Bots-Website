@@ -14,7 +14,7 @@ Includes
     - Members (with introductions)
 
 ## Running Locally
-1.Just clone the repo lol
+1. Just clone the repo lol
 ## Roadmap
 https://app.mural.co/t/shimadabotswebsite8737/m/shimadabotswebsite8737/1689564248848/8eb94cf1d6cefa6f9b1ae27d7b759092be3082d3?sender=u3203e9944b5fdba0a4a02383
 
