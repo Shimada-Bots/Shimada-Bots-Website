@@ -145,8 +145,15 @@ footer {
 .event-card {
   border-radius: 10px;
   height: 400px;
-  min-width: 350px;
-  
-  background-color: #ffffff;
-  box-shadow: 3px 3px 5px 5px #666666;
+  width: 350px;
+}
+
+.event-image-box {
+  background-color: aqua;
+  height: 75%;
+}
+
+.event-desc-box {
+  height: 25%;
+  margin: 5%;
 }
