@@ -14,14 +14,7 @@ Includes
     - Members (with introductions)
 
 ## Running Locally
-1. Clone the repo
-2. Open the terminal
-3. Run `cd website` to open the website folder
-4. Run `npm install` to install all packages
-5. Make any changes needed in `website/src` .tsx anbd .css files
-6. Run `npm run dev` to preview changes!
-7. Make sure to make a new branch and open pull requests when making changes
-
+1.Just clone the repo lol
 ## Roadmap
 https://app.mural.co/t/shimadabotswebsite8737/m/shimadabotswebsite8737/1689564248848/8eb94cf1d6cefa6f9b1ae27d7b759092be3082d3?sender=u3203e9944b5fdba0a4a02383
 
