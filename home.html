@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Shimada Bots</title>
@@ -8,13 +8,14 @@
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="script.js"></script>
+  <script type="module" src="events.js"></script>
 </head>
 
 <body>
   <header style="padding: 5px">
     <nav>
       <div class="logo">
-        <a href="index.html">
+        <a href="./index.html">
         <span>
             <img src="/assets/logos/ShimadaLogo4k.png" alt="Shimada Bots Logo">
             <h2>SHIMADA BOTS</h2> 
@@ -41,18 +42,25 @@
   </section>
 
   <section id="about">
-    <div class="info-container" style="display: flex;">
+    <div class="info-container" style="display: flex; height: 50vh">
       <div class="container" style="margin: 0% 10% 0% 0%; min-width: 45%;">
         <h2 style="color: #000000">About Us</h2>
         <p style="color: #000000">Shimada Bots is a student organization dedicated to promoting robotics and providing
           hands-on learning
           experiences. We participate in various competitions and host workshops to enhance skills and knowledge in the
           field of robotics.</p>
+        <div style="display: flex; justify-content: center; margin-top: 10%">
+          <a href="#about" class="cta-button" style="background-color: #1c1d4b">Learn More</a>
+        </div>
       </div>
-      <div class="container" style="display: flex; justify-content: center;">
-        <img src="assets/logos/placeholder.png" style="width: 5%">
-        <img src="assets/logos/Overlay_Transparent.png">
-        <img src="assets/logos/placeholder.png" style="width: 5%">
+      <div class="container" style="height: fit-content">
+        <div class="container" style="display: flex; justify-content: center; align-items: center; position: relative; margin: 13% 5% 0 0">
+          <img id="left-image-button" src="../assets/logos/placeholder.png" style="width: 5%; position: relative; left: -12%">
+          <img src="../assets/logos/placeholder.png" style="width: 80%;">
+          <img id="power-off-button" src="../assets/logos/placeholder.png" style="width: 5%; position: relative; left: 5%">
+          <img id="right-image-button" src="../assets/logos/placeholder.png" style="width: 5%; position: relative; left: 15%">
+        </div>
+        <img class="is-overlay" src="../assets/logos/Overlay_Transparent.png" style="width: 100%; aspect-ratio: 3/2;">
       </div>
     </div>
   </section>
@@ -79,20 +87,8 @@
     <div class="info-container">
       <div class="container">
         <h2>Upcoming Events</h2>
-        <div class="events-container">
-          <ul>
-            <li>Event 1</li>
-            <li>Event 2</li>
-            <li>Event 3</li>
-          </ul>
-          <div class="card event-card">
-            <div class="event-image-box">
-            </div>
-            <div class="event-desc-box">
-              <h1 style="color: #333333;">Among Us</h1>
-              <p style="color: #333333;">We play among <us></us></p>
-            </div>          
-          </div>
+        <div class="events-container" id="events-container">
+
         </div>
       </div>
     </div>
