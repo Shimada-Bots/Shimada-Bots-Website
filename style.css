@@ -112,8 +112,8 @@ section h2 {
 
 .scroll-image-mask {
   min-width: 75%;
-  mask-image: url(../assets/misc/image_mask.png);
-  -webkit-mask-image: url(../assets/misc/image_mask.png);
+  mask-image: url(assets/misc/image_mask.png);
+  -webkit-mask-image: url(assets/misc/image_mask.png);
 }
 
 .scroll-image-container {
@@ -161,7 +161,7 @@ section h2 {
 
 .gallery-container {
   min-width: 100%;
-  background-image: url(../assets/logos/placeholder.png);
+  background-image: url(assets/logos/placeholder.png);
   background-size: 100% 100%;
 }
 
