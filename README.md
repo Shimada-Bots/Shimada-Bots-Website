@@ -20,5 +20,9 @@ Includes
    
 ## Roadmap
 
-frick u ryan we using milanote now >:(
+frick u ryan we using milanote now >:( \
 https://app.milanote.com/1QlD4m11T7uJ3K?p=pT13sc8Apie
+
+## Layout
+We are using Figma to design the website layout. Here is the invite: \
+https://www.figma.com/team_invite/redeem/DEo186OHkwdbYRFZgoE4zo
