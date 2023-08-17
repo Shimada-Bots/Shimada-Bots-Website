@@ -1,0 +1,232 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section#banner {
+  background-image: url('/assets/logos/simada2.png');
+  background-position: 80% 50%;
+  background-size: 700px 500px;
+  background-repeat: no-repeat;
+}
+
+.banner-layout {
+  
+  background-color: rgba(200, 200, 200, 0.5);
+
+  height: 80%;
+
+  padding: 8% 10% 8% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content {
+  text-align: center;
+  margin-right: 50%;
+}
+
+h1 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #fff;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.container {
+  width: 100%;
+  display: block;
+}
+
+.info-container {
+  margin: 2% 10% 40px 10%;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.section-divider{
+  height: 2px;
+  background-color: #1c1d4b;
+  margin: 4% 5% 4% 5%;
+}
+
+/* About */
+
+.scroll-image-mask {
+  min-width: 75%;
+  mask-image: url(/assets/misc/image_mask.png);
+  -webkit-mask-image: url(/assets/misc/image_mask.png);
+}
+
+.scroll-image-container {
+  display: flex;
+  transition: 0.5s;
+}
+
+.cortex-overlay {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0; 
+  top: 0;
+  z-index: 1;
+}
+
+.view-more {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-more-button {
+  position: relative;
+  right: 5%;
+  top: 10.7%;
+  color: #ffffff00;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.view-more-button:hover {
+  color: #888;
+}
+
+
+
+.gallery-container {
+  min-width: 100%;
+  background-image: url(/assets/logos/placeholder.png);
+  background-size: 100% 100%;
+}
+
+.gallery {
+  background-color: rgba(200, 200, 200, 0.5);
+  min-width: 100%;
+  min-height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Teams */
+
+.teams-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20%;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  text-align: center;
+  margin-bottom: 20px;
+  min-width: 200px
+}
+
+.team-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Events */
+
+.events-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10%;
+}
+
+.event-card {
+  border-radius: 10px;
+  height: 400px;
+  width: 350px;
+}
+
+.event-image-box {
+  background-color: aqua;
+  height: 65%;
+}
+
+.event-desc-box {
+  height: 35%;
+  margin: 5%;
+}
