@@ -43,7 +43,7 @@ nav ul li a {
 }
 
 section#banner {
-  height: 80vh;
+  height: calc(100vh - 60px);
   background-image: url('/assets/logos/simada2.png');
   background-position: 90% 50%;
   background-size: 700px 500px;
@@ -68,13 +68,14 @@ section#banner {
 }
 
 h1 {
-  font-size: 36px;
-  color: #fff;
+  font-size: 220%;
+  color: #000000;
   margin-bottom: 10px;
 }
 
+
 p {
-  color: #fff;
+  color: #000000;
 }
 
 .cta-button {
@@ -92,7 +93,7 @@ p {
 }
 
 .info-container {
-  margin: 2% 10% 40px 10%;
+  margin: 5% 9% 40px 9%;
   display: flex;
   justify-content: center;
   width: 80%;
@@ -104,7 +105,7 @@ section h2 {
 }
 
 .section-divider{
-  height: 2px;
+  height: 3px;
   background-color: #1c1d4b;
   margin: 4% 5% 4% 5%;
 }
@@ -230,4 +231,12 @@ footer {
 .event-desc-box {
   height: 35%;
   margin: 5%;
+}
+
+/* Misc */
+
+.scroll-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }

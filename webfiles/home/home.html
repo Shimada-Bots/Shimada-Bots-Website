@@ -3,8 +3,8 @@
 
 <head>
   <title>Shimada Bots</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="script.js"></script>
@@ -37,28 +37,30 @@
       <div class="banner-content">
         <h1 style="color: #000000; font-size: xx-large;">Welcome to Shimada Bots</h1>
         <h4 style="color: #000000; font-size: x-large;">Join us in exploring the exciting world of robotics!</p>
-          <a href="#events" class="button is-medium is-dark m-5">Get Involved</a>
+          <a href="#events" class="button is-medium is-dark m-6">Get Involved</a>
       </div>
     </div>
+
+    <img class="scroll-button" src="/assets/logos/placeholder.png" style="position: relative; left: 48%; bottom: 15%;">
   </section>
 
   <section id="about">
-    <div class="info-container" style="display: flex; height: 50vh">
-      <div class="container" style="margin: 0% 10% 0% 0%; min-width: 45%;">
-        <h2 style="color: #000000">About Us</h2>
-        <p style="color: #000000">Shimada Bots is a student organization dedicated to promoting robotics and providing
+    <div class="info-container" style="display: flex;">
+      <div class="container" style="margin: 0% 10% 0% 0%; max-width: 40%;">
+        <h1 style="color: #000000">About Us</h1>
+        <p style="color: #000000; font-size: 140%;">Shimada Bots is a student organization dedicated to promoting robotics and providing
           hands-on learning
           experiences. We participate in various competitions and host workshops to enhance skills and knowledge in the
           field of robotics.</p>
-        <div style="display: flex; justify-content: center; margin-top: 10%">
-          <a href="/webfiles/about/about.html" class="button is-link" style="background-color: #1c1d4b">Learn More</a>
+        <div style="display: flex; justify-content: center; margin-top: 20%">
+          <a href="/webfiles/about/about.html" class="button is-link is-medium" style="background-color: #1c1d4b">Learn More</a>
         </div>
       </div>
-      <div class="container" style="height: fit-content">
+      <div class="container" style="height: fit-content; max-width: 47%; position: relative; left: 3%;">
         <img class="cortex-overlay" src="/assets/logos/Overlay_Transparent.png" style="width: 100%; aspect-ratio: 3/2;">
 
-      <div class="view-more is-hidden" id="view-more">
-          <a href="#about" class="button is-ghost view-more-button">View More</a>
+        <div class="view-more is-hidden" id="view-more">
+            <a href="#about" class="button is-ghost view-more-button">View More</a>
         </div>
 
         <div class="container" style="display: flex; justify-content: center; align-items: center;  margin: 13% 0% 0 0">
@@ -82,13 +84,17 @@
         </div>
       </div>
     </div>
+
+    <div style="display: flex; justify-content: center;">
+      <img class="scroll-button" src="/assets/logos/placeholder.png">
+    </div>
   </section>
 
   <div class="section-divider"></div>
 
   <section id="teams">
     <div class="info-container" style="flex-direction: column">
-      <h2>Meet the Teams</h2>
+      <h1>Meet the Teams</h1>
       <div class="teams-container">
         <div class="team-card">
           <img src="/assets/logos/placeholder.png" alt="Team 1">
@@ -109,7 +115,7 @@
   <section id="events">
     <div class="info-container">
       <div class="container">
-        <h2>Upcoming Events</h2>
+        <h1>Upcoming Events</h1>
         <div class="events-container" id="events-container">
 
         </div>
@@ -122,7 +128,7 @@
   <section id="contact">
     <div class="info-container">
       <div class="container">
-        <h2>Contact Us</h2>
+        <h1>Contact Us</h1>
         <form id="contact-form">
           <input class="input is-normal my-2" type="text" placeholder="Name">
           <p class="control has-icons-left has-icons-right my-2">
