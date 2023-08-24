@@ -5,6 +5,9 @@
   <title>Shimada Bots</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="script.js"></script>
@@ -40,14 +43,15 @@
           <a href="#events" class="button is-medium is-dark m-6">Get Involved</a>
       </div>
     </div>
-
-    <img class="scroll-button" src="/assets/logos/placeholder.png" style="position: relative; left: 48%; bottom: 15%;">
   </section>
+  <div style="display: flex; justify-content: center;">
+    <img class="scroll-button" src="/assets/logos/placeholder.png" style="position: relative; bottom: 90px;">
+  </div>
 
-  <section id="about">
-    <div class="info-container" style="display: flex;">
+  <section id="about" style="margin-top: 1%;">
+    <div class="info-container" style="display:flex;">
       <div class="container" style="margin: 0% 10% 0% 0%; max-width: 40%;">
-        <h1 style="color: #000000">About Us</h1>
+        <h1 style="color: #000000;">About Us</h1>
         <p style="color: #000000; font-size: 140%;">Shimada Bots is a student organization dedicated to promoting robotics and providing
           hands-on learning
           experiences. We participate in various competitions and host workshops to enhance skills and knowledge in the
@@ -85,7 +89,7 @@
       </div>
     </div>
 
-    <div style="display: flex; justify-content: center;">
+    <div style="display: flex; justify-content: center; margin-top: 3%;">
       <img class="scroll-button" src="/assets/logos/placeholder.png">
     </div>
   </section>
@@ -93,20 +97,28 @@
   <div class="section-divider"></div>
 
   <section id="teams">
-    <div class="info-container" style="flex-direction: column">
-      <h1>Meet the Teams</h1>
+    <div class="info-container" style="flex-direction: column;">
+      <div class="container">
+        <h1>Meet the Bots</h1>
+      </div>
       <div class="teams-container">
         <div class="team-card">
           <img src="/assets/logos/placeholder.png" alt="Team 1">
           <h3>Team 1</h3>
-          <p style="color: #000000">Team 1 description goes here.</p>
+          <p style="color: #000000; font-size: large;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
         <div class="team-card">
           <img src="/assets/logos/placeholder.png" alt="Team 2">
           <h3>Team 2</h3>
-          <p style="color: #000000">Team 2 description goes here.</p>
+          <p style="color: #000000; font-size: large">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 3%">
+      <a href="/webfiles/teams/teams.html" class="button is-link is-medium" style="background-color: #1c1d4b">Learn More</a>
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 3%;">
+      <img class="scroll-button" src="/assets/logos/placeholder.png">
     </div>
   </section>
 
@@ -121,31 +133,38 @@
         </div>
       </div>
     </div>
+    <div style="display: flex; justify-content: center; margin-top: 3%;">
+      <img class="scroll-button" src="/assets/logos/placeholder.png">
+    </div>
   </section>
 
   <div class="section-divider"></div>
 
   <section id="contact">
     <div class="info-container">
-      <div class="container">
+      <div class="container" style="margin-bottom: 2%;">
         <h1>Contact Us</h1>
         <form id="contact-form">
-          <input class="input is-normal my-2" type="text" placeholder="Name">
-          <p class="control has-icons-left has-icons-right my-2">
-            <input class="input" type="email" placeholder="Email">
-            <span class="icon is-small is-left">
-              <i class="fas fa-envelope"></i>
-            </span>
-            <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
-            </span>
-          </p>
-          <div class="field my-4">
+          <div style="display: flex; justify-content: space-between; margin: 2% 10%;">
+            <input class="input is-normal" style="width: 49%;" type="text" placeholder="Name">
+            <p class="control has-icons-left has-icons-right" style="width: 49%;">
+              <input class="input" type="email" placeholder="Email">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </p>
+          </div>
+
+          <div class="field my-4" style="margin: 2% 10%;">
             <div class="control">
               <textarea class="textarea" placeholder="Message"></textarea>
             </div>
           </div>
-          <input type="submit" value="Send Message">
+
+          <input style="margin: 1% 10%;" class="button" type="submit" value="Send Message">
         </form>
       </div>
     </div>
@@ -153,7 +172,7 @@
 
   <footer>
     <div class="container" style="width: 90%">
-      <p>Shimada Bots Est. 2023</p>
+      <p style="color: white;">Shimada Bots Est. 2023</p>
     </div>
   </footer>
 </body>

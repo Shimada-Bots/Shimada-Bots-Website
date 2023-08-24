@@ -7,8 +7,8 @@ JSON.events.forEach(event => {
         "    <div class=\"event-image-box\">" +
         "    </div>" +
         "    <div class=\"event-desc-box\">" +
-        "        <h3 style=\"color: #333333; font-weight: bold\">" + event.name +  "</h3>" +
-        "        <h3 style=\"color: #333333; font-weight: bold\">" + event.date +  "</h3>" +
+        "        <h5 style=\"color: #333333; font-weight: bold\">" + event.name +  "</h5>" +
+        "        <h5 style=\"color: #333333; font-weight: bold\">" + event.date +  "</h5>" +
         "        <p style=\"color: #333333;\">" + event.description + "</p>" +
         "    </div>" +
         "</div>"
