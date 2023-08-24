@@ -57,18 +57,17 @@ nav ul li a {
 section#banner {
   height: calc(100vh - 60px);
   width: 100%;
+  background-color: #0000008c;
+}
+
+.banner-layout {
+  height: 100%;
+  width: 100%;
+
   background-image: url('/assets/logos/simada2-transparent.png');
   background-position: 90% 50%;
   background-size: 700px 500px;
   background-repeat: no-repeat;
-}
-
-.banner-layout {
-  
-  background-color: rgba(200, 200, 200, 0.5);
-
-  height: 100%;
-  width: 100%;
 
   padding: 6% 10% 6% 10%;
   display: flex;
@@ -84,20 +83,20 @@ section#banner {
 
 h1 {
   font-size: 220%;
-  color: #000000;
+  color: #eee;
   margin-bottom: 10px;
   font-family: Roboto Mono;
 }
 
 h3 {
   font-size: 175%;
-  color: #000000;
+  color: #eee;
   margin-bottom: 10px;
   font-family: Roboto Mono;
 }
 
 p {
-  color: #000000;
+  color: #eee;
   font-family: Nunito;
 }
 
@@ -115,15 +114,15 @@ a {
 }
 
 .blue-button {
-  background-color: #1C1D49;
-  color: #fff;
+  background-color: #25C7F4;
+  color: #17181C;
   border-radius: 8px;
   border-color: transparent;
 }
 
 .blue-button:hover {
-  background-color: #0e0e22;
-  color: #fff;
+  background-color: #1b8dac;
+  color: #17181C;
 }
 
 .container {
@@ -144,7 +143,7 @@ section h2 {
 
 .section-divider{
   height: 3px;
-  background-color: #1c1d4b;
+  background-color: #ddd;
   margin: 3% 5% 3% 5%;
 }
 
