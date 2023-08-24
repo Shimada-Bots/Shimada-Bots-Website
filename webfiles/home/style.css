@@ -109,6 +109,18 @@ a {
   margin-top: 20px;
 }
 
+.blue-button {
+  background-color: #1C1D49;
+  color: #fff;
+  border-radius: 8px;
+  border-color: transparent;
+}
+
+.blue-button:hover {
+  background-color: #0e0e22;
+  color: #fff;
+}
+
 .container {
   width: 100%;
   display: block;
@@ -117,7 +129,6 @@ a {
 .info-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 80%;
 }
 
@@ -173,12 +184,16 @@ section h2 {
   position: relative;
   right: 5%;
   top: 10.7%;
-  color: #ffffff00;
-  background-color: rgba(0, 0, 0, 0);
+  color: transparent;
+  background-color: transparent;
+
+  border-radius: 8px;
+  border-color: transparent;
 }
 
 .view-more-button:hover {
-  color: #888;
+  background-color: rgba(0, 0, 0, 0.47);
+  color: transparent;
 }
 
 
