@@ -84,7 +84,6 @@ section#banner {
 h1 {
   font-size: 220%;
   color: #eee;
-  margin-bottom: 10px;
   font-family: Roboto Mono;
 }
 
@@ -207,7 +206,7 @@ section h2 {
 .view-more-button {
   position: relative;
   right: 5%;
-  top: 7%;
+  top: 6.8%;
   color: transparent;
   background-color: transparent;
 
