@@ -101,7 +101,7 @@ h1 {
 }
 .Dot-Group{
   position: relative;
-  top: 390px;
+  top: 10vh;
 }
 
 .active, .dot:hover {
@@ -207,7 +207,7 @@ section h2 {
 .view-more-button {
   position: relative;
   right: 5%;
-  top: 10.7%;
+  top: 7%;
   color: transparent;
   background-color: transparent;
 
