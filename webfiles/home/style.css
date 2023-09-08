@@ -38,6 +38,21 @@ section {
   height: 50px;
 }
 
+.progress-div{
+  margin-top: 1px;
+}
+.progress{
+  max-width: 175px;
+}
+
+#mBots{
+  max-width: 275px;
+}
+
+#uEvents{
+  max-width: 215px;
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
