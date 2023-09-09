@@ -50,6 +50,10 @@ section {
 }
 
 #uEvents{
+  max-width: 315px;
+}
+
+#contactP{
   max-width: 215px;
 }
 
