@@ -83,9 +83,9 @@ section#banner {
   height: 100%;
   width: 100%;
 
-  background-image: url('/assets/logos/ShimadaLogoTrasparent4k.png');
-  background-position: 85% 50%;
-  background-size: 550px 500px;
+  background-image: url('/assets/logos/Shimada_offwhite_text.png');
+  background-position: 100%  -1750%;
+  background-size: 866px  650px;
   background-repeat: no-repeat;
 
   padding: 6% 10% 6% 10%;
