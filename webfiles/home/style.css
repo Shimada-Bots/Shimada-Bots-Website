@@ -321,3 +321,7 @@ footer {
   height: 60px;
   border-radius: 50%;
 }
+
+.progress::-webkit-progress-value {
+  background-color: #25C7F4;
+}
