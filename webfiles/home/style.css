@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #17181C;
-  width: 100%;
+  width: 100%;  
   overflow-x: hidden;
 }
 
@@ -330,10 +330,20 @@ footer {
 
 /* Misc */
 
-.scroll-button {
+.scroll-button-image {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+}
+
+.scroll-button {
+  z-index: 1;
+  transition: 0s;
+}
+
+.scroll-button:hover {
+  transition: 0.25s;
+  transform: rotate(90deg);
 }
 
 .progress.is-highlight::-webkit-progress-value {
