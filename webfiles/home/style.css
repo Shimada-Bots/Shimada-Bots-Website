@@ -253,6 +253,15 @@ section h2 {
   color: transparent;
 }
 
+#left-image-button, #right-image-button {
+  transition: 0.2s;
+}
+
+#left-image-button:hover, #right-image-button:hover {
+  box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+  transform: translateY(-3px);
+}
+
 
 
 .gallery-container {
@@ -286,6 +295,7 @@ section h2 {
   margin-bottom: 0 5% 20px 5%;
   min-width: 300px;
   max-width: 40%;
+  margin-bottom: 5%
 }
 
 .team-card img {
