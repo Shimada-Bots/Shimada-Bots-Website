@@ -3,6 +3,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #17181C;
+  width: 100%;  
+  overflow-x: hidden;
 }
 
 header {
@@ -97,8 +100,19 @@ p {
   width: 80%;
 }
 
+section h1{
+  font-size: 220%;
+  margin-bottom: 20px;
+  font-family: Roboto Mono;
+}
+
 section h2 {
   font-size: 24px;
+  margin-bottom: 20px;
+}
+
+section h3{
+  font-size: 175%;
   margin-bottom: 20px;
 }
 
@@ -200,7 +214,7 @@ section h2 {
 }
 
 footer {
-  background-color: #333;
+  background-color: #25272f;
   color: #fff;
   padding: 20px;
   text-align: center;

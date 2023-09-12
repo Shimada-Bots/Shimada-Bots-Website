@@ -113,6 +113,11 @@ section h2 {
   margin-bottom: 20px;
 }
 
+section h3{
+  font-size: 175%;
+  margin-bottom: 20px;
+}
+
 .section-divider{
   height: 2px;
   background-color: var(--dark-gray);
