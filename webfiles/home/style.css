@@ -8,6 +8,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #17181C;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 header {
@@ -161,6 +163,7 @@ a {
 .blue-button:hover {
   background-color: #1b8dac;
   color: #17181C;
+  border-color: #1C1D49;
 }
 
 .container {
@@ -314,6 +317,17 @@ footer {
   margin: 5%;
 }
 
+/* Contact */
+.contact-input {
+  background-color: #25272f;
+  border-color: #25272f;
+  color: #fff;
+}
+
+.contact-input::placeholder {
+  color: #777;
+}
+
 /* Misc */
 
 .scroll-button {
@@ -322,6 +336,6 @@ footer {
   border-radius: 50%;
 }
 
-.progress::-webkit-progress-value {
+.progress.is-highlight::-webkit-progress-value {
   background-color: #25C7F4;
 }
