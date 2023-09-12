@@ -17,9 +17,14 @@ body {
 }
 
 header {
-  background-color: var(--dark-gray);
+  background-color: var(--bg-color-dark);
   color: #fff;
   padding: 20px;
+}
+
+.header-divider {
+  background-color: var(--dark-gray);
+  height: 2px;
 }
 
 nav {
@@ -129,29 +134,27 @@ section h3{
 .teams-section {
   display: flex;
   min-height: 100vh;
+  width: 195%;
   overflow-x: hidden;
+  transition: 1s;
 }
 
 .team1 {
-  min-width: 95%;
+  width: 48.5%;
   height: 100vh;
   background-color: var(--bg-color-dark);
 }
 
-.switch-light {
-  min-width: 5%;
+.switch {
+  width: 2.6%;
   height: 100vh;
   background-color: var(--bg-color-light);
-}
-
-.switch-dark {
-  min-width: 5%;
-  height: 100vh;
-  background-color: var(--bg-color-dark);
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 .team2 {
-  min-width: 95%;
+  width: 48.5%;
   height: 100vh;
   background-color: var(--bg-color-light);
 }
