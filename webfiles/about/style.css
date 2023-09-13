@@ -149,7 +149,8 @@ section h3{
 
 .teams-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .chief-officers {
@@ -184,7 +185,14 @@ section h3{
   position: absolute;
   top: auto;
   min-width: max(140%, 1000px);
-  transition: 1s cubic-bezier(.72,1.41,.59,.94);
+  transition: 0.8s cubic-bezier(.72,1.41,.59,.94);
+}
+
+#small-gear {
+  position: absolute;
+  top: 85%;
+  min-width: 60%;
+  transition: 0.8s cubic-bezier(.72,1.41,.59,.94);
 }
 
 /* Dots and buttons */
