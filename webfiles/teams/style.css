@@ -136,7 +136,7 @@ section h3{
   min-height: 100vh;
   width: 195%;
   overflow-x: clip;
-  transition: 1s;
+  transition: 0.8s;
 }
 
 .team1 {
@@ -146,10 +146,10 @@ section h3{
 }
 
 .switch {
-  width: 2.6%;
+  width: 3%;
   height: 100vh;
   background-color: var(--bg-color-light);
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
   cursor: pointer;
   position: -webkit-sticky;
   position: sticky;
