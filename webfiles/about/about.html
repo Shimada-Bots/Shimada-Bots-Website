@@ -9,8 +9,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="script.js"></script>
-  <script type="module" src="events.js"></script>
+  <script src="chief_officers.js" defer></script>
 </head>
 
 <body>
@@ -75,17 +74,19 @@
       <p style="font-size: 140%;">Meet the people behind Shimada Bots</p>
 
       <div class="teams-container">
-        <img src="/assets/icons/gear-light.png" style="position: absolute; top: auto; min-width: max(140%, 1000px);"/>
+        <img id="large-gear" src="/assets/icons/gear-light.png"/>
 
         <div class="chief-officers" style="min-height: 100vh;">
           <h3 style="color: #17181C;">Chief Officers</h3>
 
           <div style="display: flex; width: 60%; min-width: 300px; aspect-ratio: 2/1; justify-content: space-between; align-items: center;">
-            <img src="/assets/icons/left-arrow.png" style="height: 15%;"/>
-            <div style="background-color: #17181C; height: 100%; width: 80%; border-radius: 25px;">
+            <img id="left-co-button" class="left-button" src="/assets/icons/left-arrow.png" style="height: 15%;"/>
+            <div class="co-backdrop">
+              <div class="co-window">
 
+              </div>
             </div>
-            <img src="/assets/icons/right-arrow.png" style="height: 15%;"/>
+            <img id="right-co-button" class="right-button" src="/assets/icons/right-arrow.png" style="height: 15%;"/>
           </div>
 
           <div class="Dot-Group" style="text-align:center">

@@ -3,6 +3,7 @@ html {
   scroll-behavior: smooth;
 
   --bg-color-dark: #17181C;
+  --bg-color-light: #E3E4E8;
   --light-text: #eee;
   --accent-light-blue: #25C7F4;
   --accent-dark-blue: #1C1D49;
@@ -161,6 +162,33 @@ section h3{
   position: relative;
 }
 
+.co-backdrop {
+  background-color: var(--bg-color-dark);
+  height: 100%;
+  width: 80%;
+  border-radius: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.co-window {
+  background-color: var(--bg-color-light);
+  width: 90%;
+  height: 85%;
+  border-radius: 20px;
+}
+
+#large-gear {
+  position: absolute;
+  top: auto;
+  min-width: max(140%, 1000px);
+  transition: 1s cubic-bezier(.72,1.41,.59,.94);
+}
+
+/* Dots and buttons */
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -174,4 +202,22 @@ section h3{
 .Dot-Group{
   position: relative;
   top: 5vh;
+}
+
+.active, .dot:hover {
+  background-color: #5e5d5d;
+}
+
+
+.left-button, .right-button {
+  transition: 0.2s;
+}
+
+.left-button:hover, .right-button:hover {
+  transform: translateY(-3px);
+}
+
+.left-button:active, .right-button:active {
+  transition: 0.1s;
+  transform: translateY(1px);
 }

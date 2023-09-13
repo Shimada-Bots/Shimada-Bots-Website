@@ -268,6 +268,12 @@ section h2 {
   transform: translateY(-3px);
 }
 
+#left-image-button:active, #right-image-button:active {
+  transition: 0.1s;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+  transform: translateY(1px);
+}
+
 
 
 .gallery-container {
