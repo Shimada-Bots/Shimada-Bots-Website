@@ -15,7 +15,8 @@ body {
   padding: 0;
   background-color: var(--bg-color-dark);
   width: 100%;  
-  overflow-x: hidden;
+  overflow: hidden;
+  position: absolute;
 }
 
 header {
@@ -148,14 +149,29 @@ section h3{
 .teams-container {
   display: flex;
   justify-content: center;
-  overflow: hidden;
 }
 
 .chief-officers {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
   
-  margin-top: 15%;
+  margin-top: 17%;
   position: relative;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.Dot-Group{
+  position: relative;
+  top: 5vh;
 }

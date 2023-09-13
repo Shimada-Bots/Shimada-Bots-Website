@@ -1,0 +1,1 @@
+let dots = document.getElementsByClassName("dot");

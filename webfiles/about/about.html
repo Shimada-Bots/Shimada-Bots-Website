@@ -75,16 +75,26 @@
       <p style="font-size: 140%;">Meet the people behind Shimada Bots</p>
 
       <div class="teams-container">
-        <img src="/assets/icons/gear-light.png" style="position: absolute; top: auto; min-width: 140%;"/>
+        <img src="/assets/icons/gear-light.png" style="position: absolute; top: auto; min-width: max(140%, 1000px);"/>
 
-        <div class="chief-officers" style="min-height: 100vh; width: 100%;">
+        <div class="chief-officers" style="min-height: 100vh;">
           <h3 style="color: #17181C;">Chief Officers</h3>
-          <div style="display: flex; width: 60%; height: 40%; justify-content: center;">
-            <img src="/assets/icons/left-arrow.png"/>
-            <div style="background-color: #17181C; height: 100%; width: 90%; min-width: 200px; border-radius: 25px;">
+
+          <div style="display: flex; width: 60%; min-width: 300px; aspect-ratio: 2/1; justify-content: space-between; align-items: center;">
+            <img src="/assets/icons/left-arrow.png" style="height: 15%;"/>
+            <div style="background-color: #17181C; height: 100%; width: 80%; border-radius: 25px;">
 
             </div>
-            <img src="/assets/icons/right-arrow.png"/>
+            <img src="/assets/icons/right-arrow.png" style="height: 15%;"/>
+          </div>
+
+          <div class="Dot-Group" style="text-align:center">
+            <span class="dot" onclick="showSlides(0)"></span>
+            <span class="dot" onclick="showSlides(1)"></span>
+            <span class="dot" onclick="showSlides(2)"></span>
+            <span class="dot" onclick="showSlides(3)"></span>
+            <span class="dot" onclick="showSlides(4)"></span>
+            <span class="dot" onclick="showSlides(5)"></span>
           </div>
         </div>
       </div>
