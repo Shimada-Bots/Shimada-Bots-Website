@@ -163,6 +163,7 @@ section h3{
   transform:rotate(45deg);
   background-color: var(--bg-color-dark);
   transition: .5s;
+  
 }
 #line2{
   position: absolute;
