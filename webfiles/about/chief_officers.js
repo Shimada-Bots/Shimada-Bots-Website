@@ -1,32 +1,32 @@
-const leftButton = document.getElementById("left-co-button");
-const rightButton = document.getElementById("right-co-button");
+const leftCOButton = document.getElementById("left-co-button");
+const rightCOButton = document.getElementById("right-co-button");
 
 const largeGear = document.getElementById("large-gear");
 
-let dots = document.getElementsByClassName("dot");
+let dots = document.getElementsByClassName("dot1");
 
-let currentCard = 0;
+let currentOCCard = 0;
 
-function showSlides(n)
+function showCOSlides(n)
 {
-    currentCard = n;
+    currentOCCard = n;
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
       }
-      dots[currentCard].className += " active";
-    largeGear.style.transform = "rotate(" + (30*currentCard) + "deg)";
+      dots[currentOCCard].className += " active";
+    largeGear.style.transform = "rotate(" + (-30*currentOCCard) + "deg)";
 }
 
-leftButton.addEventListener("click", () => {
-    if(currentCard > 0)
+leftCOButton.addEventListener("click", () => {
+    if(currentOCCard > 0)
     {
-        showSlides(currentCard-1);
+        showCOSlides(currentOCCard-1);
     }
 })
 
-rightButton.addEventListener("click", () => {
-    if(currentCard < 5)
+rightCOButton.addEventListener("click", () => {
+    if(currentOCCard < 5)
     {
-        showSlides(currentCard+1);
+        showCOSlides(currentOCCard+1);
     }
 })

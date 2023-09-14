@@ -135,6 +135,12 @@ section h3{
   font-family: Roboto Mono;
 }
 
+h4 {
+  font-size: 150%;
+  color: var(--light-text);
+  font-family: Roboto Mono;
+}
+
 .section-divider{
   height: 2px;
   background-color: var(--accent-dark-blue);
@@ -175,10 +181,15 @@ section h3{
 }
 
 .co-window {
-  background-color: var(--bg-color-light);
+  background-color: #5c5c5c;
   width: 90%;
   height: 85%;
   border-radius: 20px;
+}
+
+.character-card {
+  display: flex;
+  padding: 10px
 }
 
 #large-gear {
@@ -188,11 +199,30 @@ section h3{
   transition: 0.8s cubic-bezier(.72,1.41,.59,.94);
 }
 
-#small-gear {
-  position: absolute;
-  top: 85%;
+.small-gear {
+  position: relative;
   min-width: 60%;
   transition: 0.8s cubic-bezier(.72,1.41,.59,.94);
+}
+
+.technical-team {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  
+  margin-top: 11.5%;
+  position: relative;
+}
+
+.company-team {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  
+  margin-top: 15%;
+  position: relative;
 }
 
 /* Dots and buttons */
@@ -209,7 +239,7 @@ section h3{
 }
 .Dot-Group{
   position: relative;
-  top: 5vh;
+  top: 3vh;
 }
 
 .active, .dot:hover {
