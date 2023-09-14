@@ -141,7 +141,7 @@ section h3{
 
 .team1 {
   width: 48.5%;
-  height: 200vh;
+  height: 100vh;
   background-color: var(--bg-color-dark);
 }
 
@@ -153,6 +153,26 @@ section h3{
   cursor: pointer;
   position: -webkit-sticky;
   position: sticky;
+}
+
+#line1{
+  position: absolute;
+  width: 85%;
+  height: 1.5%;
+  top: 0.5%;
+  transform:rotate(45deg);
+  background-color: var(--bg-color-dark);
+  transition: .5s;
+  
+}
+#line2{
+  position: absolute;
+  width: 85%;
+  height: 1.5%;
+  top: 7%;
+  transform:rotate(-45deg);
+  background-color: var(--bg-color-dark);
+  transition: .5s;
 }
 
 .team2 {
