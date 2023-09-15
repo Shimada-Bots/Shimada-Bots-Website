@@ -159,6 +159,8 @@ h4 {
   align-items: center;
 }
 
+/* Chief Officers */
+
 .chief-officers {
   display: flex;
   align-items: center;
@@ -171,8 +173,8 @@ h4 {
 
 .co-backdrop {
   background-color: var(--bg-color-dark);
-  height: 100%;
-  width: 80%;
+  width: 84%;
+  aspect-ratio: 5/3;
   border-radius: 25px;
 
   display: flex;
@@ -181,15 +183,27 @@ h4 {
 }
 
 .co-window {
-  background-color: #5c5c5c;
+  background-color: #353535;
   width: 90%;
   height: 85%;
   border-radius: 20px;
+  overflow: hidden;
+}
+
+.co-rotate {
+  display: flex;
+  transition: 0.8s cubic-bezier(.72,1.41,.59,.94);
+  transform-origin: 50% 200%;
+
+  height: 100%;
+  width: 100%;
 }
 
 .character-card {
   display: flex;
-  padding: 10px
+  padding: 10px;
+  min-width: 100%;
+  position: relative;
 }
 
 #large-gear {
@@ -197,15 +211,12 @@ h4 {
   top: auto;
   min-width: max(140%, 1000px);
   transition: 0.8s cubic-bezier(.72,1.41,.59,.94);
+  user-select: none;
 }
 
-.small-gear {
-  position: relative;
-  min-width: 60%;
-  transition: 0.8s cubic-bezier(.72,1.41,.59,.94);
-}
+/* Assistant Officers */
 
-.technical-team {
+.assistant-officers {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -215,7 +226,16 @@ h4 {
   position: relative;
 }
 
-.company-team {
+.small-gear {
+  position: relative;
+  min-width: max(60%, 430px);
+  transition: 0.8s cubic-bezier(.72,1.41,.59,.94);
+  user-select: none;
+}
+
+/* Directors */
+
+.directors {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -223,6 +243,19 @@ h4 {
   
   margin-top: 15%;
   position: relative;
+}
+
+.conveyer-belt {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background-color: #333;
+  margin-top: 98%;
+}
+
+.directors-card {
+  width: 100%;
+  height: 100%;
 }
 
 /* Dots and buttons */
