@@ -1,4 +1,4 @@
-import JSON from "/assets/events.json" assert {type: "json"}
+import JSON from "/Shimada-Bots-Website/assets/events.json" assert {type: "json"}
 
 const eventsContainer = document.getElementById("events-container")
 eventsContainer.innerHtml = ""
