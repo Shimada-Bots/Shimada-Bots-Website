@@ -5,7 +5,7 @@ html {
   --bg-color-dark: #17181C;
   --bg-color-light: #E3E4E8;
   --light-text: #eee;
-  --accent-light-blue: #25C7F4;
+  --accent-light-blue: #4F6CD3;
   --accent-dark-blue: #1C1D49;
   --dark-gray: #333;
 }
@@ -133,6 +133,7 @@ section h3{
   margin-bottom: 20px;
   color: var(--light-text);
   font-family: Roboto Mono;
+  font-weight: bold;
 }
 
 h4 {
@@ -201,9 +202,19 @@ h4 {
 
 .character-card {
   display: flex;
-  padding: 10px;
+  padding: 7% 2%;
   min-width: 100%;
   position: relative;
+}
+
+.co-image {
+  width: 75%;
+  aspect-ratio: 6/5;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  
+  outline: 3px solid var(--light-text);
+  outline-offset: 6px;
 }
 
 #large-gear {
