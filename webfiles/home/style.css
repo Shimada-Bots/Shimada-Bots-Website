@@ -4,7 +4,7 @@ html {
 
   --bg-color-dark: #17181C;
   --light-text: #eee;
-  --accent-light-blue: #25C7F4;
+  --accent-light-blue: #4F6CD3;
   --accent-dark-blue: #1C1D49;
   --dark-gray: #333;
 }
@@ -172,14 +172,16 @@ a {
 }
 
 .blue-button {
-  background-color: var(--accent-light-blue);
+  background-color: #788EDD;
   color: var(--bg-color-dark);
   border-radius: 8px;
   border-color: transparent;
+  font-weight: bold;
+  font-family: Nunito;
 }
 
 .blue-button:hover {
-  background-color: #1b8dac;
+  background-color: var(--accent-light-blue);
   color: var(--bg-color-dark);
   border-color: var(--accent-dark-blue);
 }
