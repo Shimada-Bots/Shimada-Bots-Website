@@ -155,24 +155,52 @@ section h3{
   position: sticky;
 }
 
-#line1{
+.arrow{
+  width: 100%;
+  height: 100%;
+}
+/*#line1{
   position: absolute;
-  width: 85%;
-  height: 1.5%;
+  width: 65%;
+  height: 1.2%;
   top: 0.5%;
+  right: 20%;  
   transform:rotate(45deg);
   background-color: var(--bg-color-dark);
-  transition: .5s;
+  transition: .9s;
   
 }
 #line2{
   position: absolute;
-  width: 85%;
-  height: 1.5%;
-  top: 7%;
+  width: 57%;
+  height: 1.2%;
+  top: 5.55%;
+  right: 28%;
   transform:rotate(-45deg);
   background-color: var(--bg-color-dark);
-  transition: .5s;
+  transition: .9s;
+}*/
+
+#line1{
+  position: absolute;
+  width: 65%;
+  height: 1.2%;
+  top: 3%;
+  right: 20%;  
+  transform:rotate(90deg);
+  background-color: var(--bg-color-dark);
+  transition: .9s;
+}
+
+#line2{
+  position: absolute;
+  width: 65%;
+  height: 1.2%;
+  top: 3%;
+  right: 20%;
+  transform:rotate(-360deg);
+  background-color: var(--bg-color-dark);
+  transition: .9s;
 }
 
 .team2 {
