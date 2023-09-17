@@ -14,6 +14,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 header {
@@ -201,6 +202,24 @@ section h3{
   transform:rotate(-360deg);
   background-color: var(--bg-color-dark);
   transition: .9s;
+}
+
+#botName{
+  writing-mode: vertical-rl;
+  transition: .4s;
+  height: 70%;
+  font-size: 3vw;
+  color: #17181C;
+}
+
+#botName2{
+  writing-mode: vertical-rl;
+  transition: .4s;
+  height: 70%;
+  font-size: 3vw;
+  transform: translate(-100%, -50%) rotate(180deg);
+  color: var(--bg-color-light);
+  opacity: 0;
 }
 
 .team2 {
