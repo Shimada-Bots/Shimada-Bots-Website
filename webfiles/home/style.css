@@ -91,21 +91,20 @@ section#banner {
   height: 100%;
   width: 100%;
 
-  background-image: url('/Shimada-Bots-Website/assets/logos/Shimada_offwhite_text.png');
-  background-position: 140%  10%;
-  background-size: 866px  650px;
-  background-repeat: no-repeat;
-
-  padding: 6% 10% 6% 10%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 
 .banner-content {
   text-align: center;
-  margin-right: 55%;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+.bannerImage{
+  width: 55%; /*721 px*/
+  aspect-ratio: 1.33;
 }
 
 h1 {
