@@ -280,8 +280,9 @@ section h2 {
 
 .gallery-container {
   min-width: 100%;
-  background-image: url(/Shimada-Bots-Website/assets/logos/placeholder.png);
-  background-size: 100% 100%;
+  background-image: url(/Shimada-Bots-Website/assets/photos/cae_d_villa.png);
+  background-size: 100% 80%;
+  background-position: 0 20%;
 }
 
 .gallery {
