@@ -39,8 +39,8 @@ function showCOSlides(n)
       }
     dots[currentCOCard].className += " active";
     
-    largeGear.style.transform = "rotate(" + (-60*currCODegrees) + "deg)";
-    coWindow.style.transform = "rotate(" + (-72*currCODegrees) + "deg)";
+    largeGear.style.transform = "rotate(" + (60*currCODegrees) + "deg)";
+    coWindow.style.transform = "rotate(" + (72*currCODegrees) + "deg)";
 }
 
 leftCOButton.addEventListener("click", () => {

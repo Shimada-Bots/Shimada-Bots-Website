@@ -5,11 +5,14 @@ const rightDirectorsButton = document.getElementById("right-directors-button");
 
 const conveyerBelt = document.getElementById("conveyer-belt");
 const directorsSlider = document.getElementById("directors-slider");
+const directorsOverslider = document.getElementById("directors-overslider");
 
 let dots3 = document.getElementsByClassName("dot3");
 
 let currentDirectorCard = 0;
 let currCycle = 0;
+let cycleOffset = 0;
+const directorWidth = 120;
 
 function addDirector(director) {
     let newDirector = document.createElement('div');
@@ -27,18 +30,41 @@ function addDirector(director) {
 
 function populate() {
     let numDirectors = JSON.directors.length;
-    for (let i = numDirectors - 1; i > 0; i++) {
+    for (let i = 0; i < numDirectors; i++) {
         addDirector(JSON.directors[i]);
     }
     for (let i = 0; i < numDirectors; i++){
         addDirector(JSON.directors[i]);
     }
+
+    cycleOffset = -directorWidth * numDirectors;
+    directorsOverslider.style.transform = "translate(" + cycleOffset + "%, 0)";
 }
 
 populate();
 
+function swipeSlides(difference) {
+    if (difference > 0) {
+        for(let i = 0; i < difference; i++) {
+            directorsSlider.appendChild(directorsSlider.firstElementChild.cloneNode(true));
+            directorsSlider.removeChild(directorsSlider.firstElementChild);
+        }
+    }
+    else {
+        for(let i = 0; i < -difference; i++) {
+            directorsSlider.prepend(directorsSlider.lastElementChild.cloneNode(true));
+            directorsSlider.removeChild(directorsSlider.lastElementChild);
+        }
+    }
+
+    currCycle += directorWidth * difference;
+    directorsOverslider.style.transform = "translate(" + (cycleOffset + currCycle) + "%, 0)";
+    directorsSlider.style.transform = "translate(" + (-currCycle) + "%, 0)";
+}
+
 function showDirectorsSlides(n)
 {
+    let difference = 0;
     if(n > 6)
     {
         difference = 1;
@@ -55,13 +81,15 @@ function showDirectorsSlides(n)
         currentDirectorCard = n;
     }
 
-    for (i = 0; i < dots3.length; i++) {
+    for (let i = 0; i < dots3.length; i++) {
         dots3[i].className = dots3[i].className.replace(" active", "");
       }
     dots3[currentDirectorCard].className += " active";
-
-
+    
+    swipeSlides(difference);
 }
+
+window.showDirectorsSlides = showDirectorsSlides;
 
 leftDirectorsButton.addEventListener("click", () => {
     showDirectorsSlides(currentDirectorCard-1);

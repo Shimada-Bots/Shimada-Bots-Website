@@ -152,6 +152,13 @@ h4 {
   background-color: var(--accent-light-blue);
 }
 
+footer {
+  background-color: #25272f;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
 /* Teams */
 
 .teams-container {
@@ -212,6 +219,7 @@ h4 {
   aspect-ratio: 6/5;
   border-radius: 10px;
   margin-bottom: 5%;
+  object-fit: cover;
   
   outline: 3px solid var(--light-text);
   outline-offset: 6px;
@@ -267,7 +275,7 @@ h4 {
 #directors-slider {
   transition: 0.8s ease;
   display: flex;
-  gap: 15%;
+  gap: 20%;
 }
 
 .directors-card {
