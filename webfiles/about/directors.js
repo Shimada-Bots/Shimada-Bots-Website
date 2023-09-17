@@ -17,12 +17,12 @@ const directorWidth = 120;
 function addDirector(director) {
     let newDirector = document.createElement('div');
         newDirector.className = "directors-card";
-        newDirector.innerHTML = "<div style='padding: 5px; display: flex; flex-direction: column; align-items: center;'>" +
+        newDirector.innerHTML = "<div style='padding: 5px; display: flex; flex-direction: column; align-items: center; text-align: center;'>" +
                                     "<img src='" + director.image + "' class='co-image'/>" +
                                     "<h4>" + director.name + "</h4>" +
-                                    "<h2 style='color: #eee;'>" + director.title + "</h2>" +
+                                    "<p style='color: #eee; font-family: Varino; font-size: 100%'>" + director.title + "</p>" +
                                 "</div>" +
-                                "<div style='padding: 5px; min-width: 50%;'>" +
+                                "<div style='padding: 5px; margin-left: 2%; min-width: 55%;'>" +
                                     "<p>" + director.description + "</p>" +
                                 "</div>";
         directorsSlider.appendChild(newDirector);
