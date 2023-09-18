@@ -4,6 +4,7 @@ const leftDirectorsButton = document.getElementById("left-directors-button");
 const rightDirectorsButton = document.getElementById("right-directors-button");
 
 const conveyerBelt = document.getElementById("conveyer-belt");
+const conveyerOverslider = document.getElementById("conveyer-overslider");
 const directorsSlider = document.getElementById("directors-slider");
 const directorsOverslider = document.getElementById("directors-overslider");
 
@@ -14,18 +15,27 @@ let currCycle = 0;
 let cycleOffset = 0;
 const directorWidth = 120;
 
+function addConveyerSegment() {
+    let newConveyerSegment = document.createElement('img');
+    newConveyerSegment.src = "/Shimada-Bots-Website/assets/icons/conveyer-segment.png";
+    newConveyerSegment.style.width = "100%";
+    conveyerBelt.appendChild(newConveyerSegment);
+}
+
 function addDirector(director) {
     let newDirector = document.createElement('div');
-        newDirector.className = "directors-card";
-        newDirector.innerHTML = "<div style='padding: 5px; display: flex; flex-direction: column; align-items: center; text-align: center;'>" +
-                                    "<img src='" + director.image + "' class='co-image'/>" +
-                                    "<h4>" + director.name + "</h4>" +
-                                    "<p style='color: #eee; font-family: Varino; font-size: 100%'>" + director.title + "</p>" +
-                                "</div>" +
-                                "<div style='padding: 5px; margin-left: 2%; min-width: 55%;'>" +
-                                    "<p>" + director.description + "</p>" +
-                                "</div>";
-        directorsSlider.appendChild(newDirector);
+    newDirector.className = "directors-card";
+    newDirector.innerHTML = "<div style='padding: 5px; display: flex; flex-direction: column; align-items: center; text-align: center;'>" +
+                                "<img src='" + director.image + "' class='co-image'/>" +
+                                "<h4>" + director.name + "</h4>" +
+                                "<p style='color: #eee; font-family: Varino; font-size: 100%'>" + director.title + "</p>" +
+                            "</div>" +
+                            "<div style='padding: 5px; margin-left: 2%; min-width: 55%;'>" +
+                                "<p>" + director.description + "</p>" +
+                            "</div>";
+    directorsSlider.appendChild(newDirector);
+    
+    addConveyerSegment();
 }
 
 function populate() {
@@ -37,8 +47,9 @@ function populate() {
         addDirector(JSON.directors[i]);
     }
 
-    cycleOffset = -directorWidth * numDirectors;
-    directorsOverslider.style.transform = "translate(" + cycleOffset + "%, 0)";
+    cycleOffset = -numDirectors;
+    directorsOverslider.style.transform = "translate(" + directorWidth * cycleOffset + "%, 0)";
+    conveyerOverslider.style.transform = "translate(" + (100 * cycleOffset)  + "%, 0)";
 }
 
 populate();
@@ -48,18 +59,25 @@ function swipeSlides(difference) {
         for(let i = 0; i < difference; i++) {
             directorsSlider.appendChild(directorsSlider.firstElementChild.cloneNode(true));
             directorsSlider.removeChild(directorsSlider.firstElementChild);
+            conveyerBelt.appendChild(conveyerBelt.firstElementChild.cloneNode(true));
+            conveyerBelt.removeChild(conveyerBelt.firstElementChild);
         }
     }
     else {
         for(let i = 0; i < -difference; i++) {
             directorsSlider.prepend(directorsSlider.lastElementChild.cloneNode(true));
             directorsSlider.removeChild(directorsSlider.lastElementChild);
+            conveyerBelt.prepend(conveyerBelt.lastElementChild.cloneNode(true));
+            conveyerBelt.removeChild(conveyerBelt.lastElementChild);
         }
     }
 
-    currCycle += directorWidth * difference;
-    directorsOverslider.style.transform = "translate(" + (cycleOffset + currCycle) + "%, 0)";
-    directorsSlider.style.transform = "translate(" + (-currCycle) + "%, 0)";
+    currCycle += difference;
+    directorsOverslider.style.transform = "translate(" + (directorWidth * (cycleOffset + currCycle)) + "%, 0)";
+    directorsSlider.style.transform = "translate(" + (-currCycle * directorWidth) + "%, 0)";
+
+    conveyerOverslider.style.transform = "translate(" + (100 * (cycleOffset + currCycle)) + "%, 0)";
+    conveyerBelt.style.transform = "translate(" + (-currCycle * 100) + "%, 0)";
 }
 
 function showDirectorsSlides(n)
