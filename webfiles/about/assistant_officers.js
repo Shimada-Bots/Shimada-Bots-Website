@@ -1,7 +1,9 @@
 const leftAOButton = document.getElementById("left-ao-button");
 const rightAOButton = document.getElementById("right-ao-button");
 
-const smallGears = document.getElementsByClassName("small-gear")
+const smallGears = document.getElementsByClassName("small-gear");
+const AOCardWrappers = document.getElementsByClassName("ao-card-wrapper");
+const AOCards = document.getElementsByClassName("ao-card");
 
 let dots2 = document.getElementsByClassName("dot2");
 

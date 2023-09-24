@@ -1,4 +1,15 @@
 /* style.css */
+html {
+  scroll-behavior: smooth;
+
+  --bg-color-dark: #17181C;
+  --bg-color-light: #E3E4E8;
+  --light-text: #eee;
+  --accent-light-blue: #25C7F4;
+  --accent-dark-blue: #1C1D49;
+  --dark-gray: #333;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,7 +17,7 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: var(--bg-color-dark);
   color: #fff;
   padding: 20px;
 }

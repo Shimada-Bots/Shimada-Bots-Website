@@ -260,6 +260,19 @@ footer {
   user-select: none;
 }
 
+.ao-card-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.ao-card {
+  width: 100%;
+  height: 100%;
+  background-color: #E3E4E8;
+
+  transition: 0.8s cubic-bezier(.72,1.41,.59,.94);
+}
+
 /* Directors */
 
 .directors {
